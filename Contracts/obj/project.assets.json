@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jeangelg\\.nuget\\packages\\": {}
+    "C:\\Users\\Anheru\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\CompanySolution\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\CompanySolution\\Contracts\\Contracts.csproj",
-      "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\CompanySolution\\Contracts\\obj\\",
+      "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj",
+      "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
