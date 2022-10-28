@@ -112,5 +112,4 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Entities.
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Entities.pdb
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\CompanyEmployees.StaticWebAssets.xml
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\refint\CompanyEmployees.dll
