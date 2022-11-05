@@ -22,3 +22,6 @@ C:\Users\Anheru\source\repos\Company\Contracts\obj\Debug\net5.0\Contracts.dll
 C:\Users\Anheru\source\repos\Company\Contracts\obj\Debug\net5.0\refint\Contracts.dll
 C:\Users\Anheru\source\repos\Company\Contracts\obj\Debug\net5.0\Contracts.pdb
 C:\Users\Anheru\source\repos\Company\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+C:\Users\Anheru\source\repos\Company\Contracts\bin\Debug\net5.0\Entities.dll
+C:\Users\Anheru\source\repos\Company\Contracts\bin\Debug\net5.0\Entities.pdb
+C:\Users\Anheru\source\repos\Company\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete

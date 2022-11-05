@@ -28,3 +28,5 @@ C:\Users\Anheru\source\repos\Company\LoggerService\obj\Debug\net5.0\LoggerServic
 C:\Users\Anheru\source\repos\Company\LoggerService\obj\Debug\net5.0\refint\LoggerService.dll
 C:\Users\Anheru\source\repos\Company\LoggerService\obj\Debug\net5.0\LoggerService.pdb
 C:\Users\Anheru\source\repos\Company\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
+C:\Users\Anheru\source\repos\Company\LoggerService\bin\Debug\net5.0\Entities.dll
+C:\Users\Anheru\source\repos\Company\LoggerService\bin\Debug\net5.0\Entities.pdb
