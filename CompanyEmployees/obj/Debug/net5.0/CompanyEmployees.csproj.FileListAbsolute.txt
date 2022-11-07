@@ -58,6 +58,8 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\CompanyEm
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\CompanyEmployees.runtimeconfig.dev.json
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\CompanyEmployees.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\CompanyEmployees.pdb
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
@@ -97,9 +99,9 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Entities.
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\LoggerService.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Repository.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\LoggerService.pdb
-C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Entities.pdb
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Repository.pdb
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Contracts.pdb
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Entities.pdb
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.csproj.AssemblyReference.cache
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.AssemblyInfoInputs.cache

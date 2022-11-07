@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Contracts;
 using LoggerService;
+using Entities.DataTransferObjects;
+using AutoMapper;
 namespace CompanyEmployees.Controllers
 {
      [Route("api/Companies")]
@@ -13,30 +15,26 @@ namespace CompanyEmployees.Controllers
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
+        private readonly IMapper _mapper;
+
         
-        
-        public CompaniesController(IRepositoryManager repository, ILoggerManager logger)
+        public CompaniesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
         {
             _logger = logger;
             _repository = repository;
-            
+            _mapper = mapper;
         }
 
         [HttpGet]
         public IActionResult GetCompanies()
         {
-            try
-            {
+            
+            
                 var companies = _repository.Company.GetAllCompanies(trackChanges : false);
-                return Ok(companies);
-            }
-            catch (Exception ex)
-            {
+                var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
+                return Ok(companiesDto);
                 
-                _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action {ex}"); 
-
-                return StatusCode(500, "Internal server error"); 
-            }
+                //throw new Exception ("Exception");
         }
     }
 }

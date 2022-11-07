@@ -20,8 +20,9 @@ namespace Repository
 
          public IQueryable<T> FindAll(bool trackChanges)
         {
-            // return !trackChanges ? RepositoryContext.Set<T>().AsNoTracking() : RepositoryContext.Set<T>();
-            if (!trackChanges)
+            // when is set to false we attach the AsNoTracking method to our query to inform ef core
+            // that it doesnt need to track changes for the required entities this greatly improves the speed of a query.
+            if (!trackChanges)// when is not equal to true 
             {
                 return RepositoryContext.Set<T>().AsNoTracking();
             }

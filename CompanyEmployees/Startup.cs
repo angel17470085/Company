@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NLog;
 using System.IO;
+using AutoMapper;
+using Contracts;
 
 namespace CompanyEmployees
 {
@@ -28,12 +30,13 @@ namespace CompanyEmployees
             services.ConfigureIISIntegration();
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
             services.ConfigureLoggerService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerManager logger)
         {
             if (env.IsDevelopment())
             {
@@ -44,6 +47,7 @@ namespace CompanyEmployees
             {
                 app.UseHsts();
             }
+            app.ConfigureExceptionHandler(logger); 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
