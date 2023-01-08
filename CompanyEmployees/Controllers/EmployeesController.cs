@@ -46,5 +46,29 @@ namespace CompanyEmployees.Controllers
                 return Ok (employeesDto);
             }
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetEmployeeForCompany(Guid companyId, Guid id)
+        {
+            var company = _repository.Company.GetCompany(companyId, trackChanges : false);
+
+            if (company == null)
+            {
+                _logger.LogInfo($"the company with id {companyId} does'nt exists");
+                return NotFound();
+            }
+
+            var employeeDb = _repository.Employee.GetEmployee(companyId, id, trackChanges: false);
+
+            if (employeeDb == null)
+            {
+                _logger.LogInfo($"Employee with Id {id} does'nt exist in the database");
+                return NotFound();
+            }
+
+            var employeeDto = _mapper.Map<EmployeeDto>(employeeDb);
+            return Ok(employeeDto);
+        }
+
     }
 }
