@@ -34,7 +34,7 @@ namespace Repository
 
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
         {
-            if  (!trackChanges)
+            if  (!trackChanges)  //Not equal to true, meaning its false it will not track changes
             {
                 return RepositoryContext.Set<T>().Where(expression).AsNoTracking();
             }
