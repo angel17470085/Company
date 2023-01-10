@@ -17,6 +17,11 @@ namespace CompanyEmployees
             .ForMember(dest=> dest.FullAddress, opt => opt.MapFrom(src=> string.Join(' ', src.Address, src.Country)));
 
             CreateMap<Employee, EmployeeDto>();
+
+            //Mapping rule for posting, the source would be a dto from  postman
+            CreateMap<CompanyForCreatioinDto, Company>();
+
+            CreateMap<EmployeeForCreationDto, Employee>();
             
         }
     }

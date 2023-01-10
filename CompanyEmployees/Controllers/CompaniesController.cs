@@ -7,6 +7,7 @@ using Contracts;
 using LoggerService;
 using Entities.DataTransferObjects;
 using AutoMapper;
+using Entities.Models;
 namespace CompanyEmployees.Controllers
 {
      [Route("api/Companies")]
@@ -37,7 +38,7 @@ namespace CompanyEmployees.Controllers
                 //throw new Exception ("Exception");
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "CompanyById")]
         public IActionResult GetCompany(Guid id)
         {
 
@@ -56,6 +57,24 @@ namespace CompanyEmployees.Controllers
                 var companyDto = _mapper.Map<CompanyDto>(company);
                 return Ok(companyDto);
             }
+
+        }
+
+        [HttpPost]
+        public IActionResult CreateCompany ([FromBody]CompanyForCreatioinDto company)
+        {
+            if (company == null)
+            {
+                _logger.LogError($"ComopanyForCreationDto object set form client is null");
+                return BadRequest("CompanyForCreationDto object is null");
+            }
+
+            var companyEntity = _mapper.Map<Company>(company);
+            _repository.Company.CreateCompany(companyEntity);
+            _repository.Save();
+
+            var companyToReturn = _mapper.Map<CompanyDto>(companyEntity);
+            return CreatedAtRoute("CompanyById", new {id = companyToReturn.Id}, companyToReturn); // the second parameter is an anonymous type...
 
         }
     }
