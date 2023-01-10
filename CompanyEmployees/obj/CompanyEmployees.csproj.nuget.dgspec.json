@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj": {}
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj": {
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
+        "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
         "projectName": "CompanyEmployees",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\obj\\",
+        "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
+        "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\CompanyEmployees\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Anheru\\source\\repos\\Company\\LoggerService\\LoggerService.csproj": {
-                "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\LoggerService\\LoggerService.csproj"
+              "C:\\Users\\Jeangelg\\source\\repos\\Company\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\LoggerService\\LoggerService.csproj"
               },
-              "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\Repository.csproj"
+              "C:\\Users\\Jeangelg\\source\\repos\\Company\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Repository\\Repository.csproj"
               }
             }
           }
@@ -78,11 +78,16 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -91,21 +96,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\obj\\",
+        "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -119,8 +124,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj"
+              "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj"
               }
             }
           }
@@ -140,8 +145,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -150,21 +154,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -205,8 +209,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -215,21 +218,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Anheru\\source\\repos\\Company\\LoggerService\\LoggerService.csproj": {
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\Company\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\LoggerService\\LoggerService.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\LoggerService\\obj\\",
+        "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -243,8 +246,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -270,8 +273,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -280,21 +282,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\Repository.csproj": {
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -308,11 +310,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj"
+              "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj"
               }
             }
           }
@@ -338,8 +340,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -348,7 +349,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

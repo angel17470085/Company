@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Entities.DataTransferObjects
 {
-    public class CompanyForCreatioinDto
+    public class CompanyForCreationDto
     {
         public string Name { get; set; }
 
@@ -13,6 +13,7 @@ namespace Entities.DataTransferObjects
 
         public string Country { get; set; }
 
-        
+        public IEnumerable<EmployeeForCreationDto> Employees { get; set; }
+
     }
 }

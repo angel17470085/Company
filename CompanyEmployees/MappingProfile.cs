@@ -19,7 +19,7 @@ namespace CompanyEmployees
             CreateMap<Employee, EmployeeDto>();
 
             //Mapping rule for posting, the source would be a dto from  postman
-            CreateMap<CompanyForCreatioinDto, Company>();
+            CreateMap<CompanyForCreationDto, Company>();
 
             CreateMap<EmployeeForCreationDto, Employee>();
             

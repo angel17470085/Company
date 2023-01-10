@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {}
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {
+    "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Jeangelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeangelg\\source\\repos\\Company\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeangelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
