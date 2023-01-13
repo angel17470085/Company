@@ -100,6 +100,31 @@ namespace CompanyEmployees.Controllers
 
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult DeleteEmployeeForCompany ( Guid companyId, Guid id)
+        {
+            var company = _repository.Company.GetCompany(companyId, trackChanges: false);
+            if (company == null)
+            {
+                _logger.LogInfo($"company with id : {companyId} does´nt exist in the database."); 
+                return NotFound();
+            }
+
+            var employeeForCompany = _repository.Employee.GetEmployee(companyId,id, trackChanges: false);
+
+            if (employeeForCompany == null)
+            {
+                _logger.LogInfo($"Employee with Id: {id} does´nt exists in the database"); 
+                NotFound();
+            }
+
+            _repository.Employee.DeleteEmployee(employeeForCompany);
+            _repository.Save();
+            
+            return NoContent();
+            
+        }
+
 
     }
 }
