@@ -48,5 +48,7 @@ namespace CompanyEmployees.Extensions
         {
             return builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
         }
+
+        
     }
 }
