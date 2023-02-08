@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Entities.DataTransferObjects
 {
-    public class CompanyForUpdateDto
+    public class CompanyForUpdateDto : CompanyForManipulationDto
     {
         public string Name { get; set; }
 
