@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Contracts;
 using Entities;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace Repository
 {
     public class CompanyRepository : RepositoryBase<Company>, ICompanyRepository
@@ -14,14 +16,14 @@ namespace Repository
             
         }
 
-        public IEnumerable<Company> GetAllCompanies(bool trackChanges)
+        public async Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trackChanges)
         {
-             return FindAll(trackChanges).OrderBy(c=>c.Name).ToList();
+             return await FindAll(trackChanges).OrderBy(c=>c.Name).ToListAsync();
         }
 
-      public Company GetCompany(Guid companyId, bool trackChanges)
+      public async Task<Company> GetCompanyAsync(Guid companyId, bool trackChanges)
         {
-        return FindByCondition(c=>c.Id.Equals(companyId), trackChanges).FirstOrDefault();
+        return await FindByCondition(c=>c.Id.Equals(companyId), trackChanges).FirstOrDefaultAsync();
         }
 
         public void CreateCompany(Company company)
@@ -29,9 +31,9 @@ namespace Repository
            Create(company);
         }
 
-        IEnumerable<Company> ICompanyRepository.GetByIds(IEnumerable<Guid> ids, bool trackChanges)
+       public async Task<IEnumerable<Company>> GetByIdsAsync(IEnumerable<Guid> ids, bool trackChanges)
         {
-          return  FindByCondition(x=> ids.Contains(x.Id), trackChanges).ToList();
+          return await FindByCondition(x=> ids.Contains(x.Id), trackChanges).ToListAsync();
         }
 
        public void DeleteCompany(Company company)
