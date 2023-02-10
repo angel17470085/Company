@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Contracts;
+﻿using Contracts;
 using NLog;
 
-namespace LoggerService 
+namespace LoggerService
 {
     public class LoggerManager : ILoggerManager
     {
-
         private static ILogger logger = LogManager.GetCurrentClassLogger();
+
         public LoggerManager()
         {
-                
         }
+
         public void LogDebug(string message)
         {
             logger.Debug(message);
@@ -23,7 +18,7 @@ namespace LoggerService
 
         public void LogError(string message)
         {
-            logger.Error(message); 
+            logger.Error(message);
         }
 
         public void LogInfo(string message)
@@ -33,7 +28,8 @@ namespace LoggerService
 
         public void LogWarn(string message)
         {
-               logger.Warn(message);  
+            logger.Warn(message);
         }
+
     }
 }

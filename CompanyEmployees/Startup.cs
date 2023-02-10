@@ -1,15 +1,17 @@
+using AutoMapper;
+using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Extensions;
+using Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NLog;
 using System.IO;
-using AutoMapper;
-using Contracts;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees
 {
@@ -28,27 +30,26 @@ namespace CompanyEmployees
         {
             services.ConfigureCors();
             services.ConfigureIISIntegration();
+            services.ConfigureLoggerService();
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
             services.AddAutoMapper(typeof(Startup));
-            
-            services.ConfigureLoggerService();
+            services.AddScoped<ValidationFilterAttribute>();
+            services.AddScoped<ValidateCompanyExistsAttribute>();
+            services.AddScoped<ValidateEmployeeForCompanyExistsAttribute>();
 
-            services.AddControllers(config => 
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            services.AddControllers(config =>
             {
                 config.RespectBrowserAcceptHeader = true;
                 config.ReturnHttpNotAcceptable = true;
             }).AddNewtonsoftJson()
-            .AddXmlDataContractSerializerFormatters()
-              .AddCustomCsvFormatter();
-
-              services.Configure<ApiBehaviorOptions>(
-                options => 
-                {
-                    options.SuppressModelStateInvalidFilter = true;
-                }
-              );
-
+              .AddXmlDataContractSerializerFormatters()
+              .AddCustomCSVFormatter();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,15 +59,14 @@ namespace CompanyEmployees
             {
                 app.UseDeveloperExceptionPage();
             }
-
             else
             {
                 app.UseHsts();
             }
-            app.ConfigureExceptionHandler(logger); 
+
+            app.ConfigureExceptionHandler(logger);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
 
             app.UseCors("CorsPolicy");
 

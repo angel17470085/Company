@@ -1,10 +1,6 @@
-using System.Diagnostics.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Contracts;
+﻿using Contracts;
 using Entities;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -19,34 +15,27 @@ namespace Repository
             _repositoryContext = repositoryContext;
         }
 
-        public ICompanyRepository Company 
+        public ICompanyRepository Company
         {
             get
             {
                 if (_companyRepository == null)
-                {
-                    _companyRepository = new CompanyRepository(_repositoryContext);  
-                }
+                    _companyRepository = new CompanyRepository(_repositoryContext);
 
-                  return _companyRepository;
+                return _companyRepository;
             }
         }
 
-        public IEmployeeRepository Employee 
+        public IEmployeeRepository Employee
         {
             get
             {
                 if (_employeeRepository == null)
-                {
-                    _employeeRepository = new EmployeeRepository(_repositoryContext); 
-                }
+                    _employeeRepository = new EmployeeRepository(_repositoryContext);
 
                 return _employeeRepository;
             }
         }
-        public Task SaveAsync()
-        {
-           return _repositoryContext.SaveChangesAsync();
-        }
+        public Task SaveAsync() => _repositoryContext.SaveChangesAsync();
     }
 }

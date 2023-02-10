@@ -1,12 +1,11 @@
-using Entities.DataTransferObjects;
+﻿using Entities.DataTransferObjects;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Net.Http.Headers;
-using System.Text;
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
-
 
 namespace CompanyEmployees
 {
@@ -15,18 +14,17 @@ namespace CompanyEmployees
         public CsvOutputFormatter()
         {
             SupportedMediaTypes.Add(MediaTypeHeaderValue.Parse("text/csv"));
-            SupportedEncodings.Add(Encoding.UTF8); 
+            SupportedEncodings.Add(Encoding.UTF8);
             SupportedEncodings.Add(Encoding.Unicode);
-
         }
 
         protected override bool CanWriteType(Type type)
         {
-            if (typeof(CompanyDto).IsAssignableFrom(type) ||
-             typeof(IEnumerable<CompanyDto>).IsAssignableFrom(type))
+            if (typeof(CompanyDto).IsAssignableFrom(type) || typeof(IEnumerable<CompanyDto>).IsAssignableFrom(type))
             {
-                return base.CanWriteType(type); 
+                return base.CanWriteType(type);
             }
+
             return false;
         }
 
@@ -46,12 +44,14 @@ namespace CompanyEmployees
             {
                 FormatCsv(buffer, (CompanyDto)context.Object);
             }
-             await response.WriteAsync(buffer.ToString());
+
+            await response.WriteAsync(buffer.ToString());
         }
 
-        private static void FormatCsv(StringBuilder buffer, CompanyDto company) 
-        { 
-           buffer.AppendLine($"{company.Id},\"{company.Name},\"{company.FullAddress}\"");
+        private static void FormatCsv(StringBuilder buffer, CompanyDto company)
+        {
+            buffer.AppendLine($"{company.Id},\"{company.Name},\"{company.FullAddress}\"");
         }
+
     }
 }
