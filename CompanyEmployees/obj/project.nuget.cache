@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UWxGQBqwOvGW9h9JCZCNEJ49AoQpmNUxwMySuQveY6v0moqZtuzEDFouPX2nGnBxVMT+AMFkt8ut/x9Zrl63ag==",
+  "dgSpecHash": "IRNIqjn7koUdOdUY+NIHPoOVi18SNEPXnzv26Hp46XmsVAMS7zm/pMDLjcau/C39BwzCuAi1d69//wkle9WnnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -91,6 +91,7 @@
     "C:\\Users\\Anheru\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Anheru\\.nuget\\packages\\system.linq.dynamic.core\\1.2.6\\system.linq.dynamic.core.1.2.6.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",

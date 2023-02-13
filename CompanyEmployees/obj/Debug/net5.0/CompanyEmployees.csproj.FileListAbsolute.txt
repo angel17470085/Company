@@ -141,3 +141,4 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\refint\Co
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.pdb
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.genruntimeconfig.cache
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\ref\CompanyEmployees.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
