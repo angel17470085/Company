@@ -4,6 +4,7 @@ using CompanyEmployees.ModelBinders;
 using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,21 +21,24 @@ namespace CompanyEmployees.Controllers
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
 
-        public CompaniesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        private readonly IDataShaper<CompanyDto> _dataShaper;
+
+        public CompaniesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IDataShaper<CompanyDto> dataShaper)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            _dataShaper = dataShaper; 
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCompanies()
+        public async Task<IActionResult> GetCompanies( [FromQuery] CompanyParameters companyParameters)
         {
             var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges: false);
 
             var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
-            return Ok(companiesDto);
+            return Ok(_dataShaper.ShapeData(companiesDto, companyParameters.Fields));
         }
 
         [HttpGet("{id}", Name = "CompanyById")]
