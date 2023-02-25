@@ -11,11 +11,7 @@ namespace Entities.Models
         {
             Entity = new Entity();
         }
-
         public Guid Id { get; set; }
-
         public Entity Entity { get; set; }
-
     }
-
 }
