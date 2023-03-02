@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S0ZsRaveOIgfceHRObfLMYaf8REk92/eiULxR1eAxMbhHWFCAaxzu+mLbXjho2Z7PnHW3moXp0RvEQqToUYXmQ==",
+  "dgSpecHash": "0SSzN6cEsri61dgplonTn3K7dM8X8T/VtJwDJjk5xO0PgWWketzLu9c64xGmXxIv7wvJXD6D3Y9AJ7GzKEdrkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\Anheru\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Anheru\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    "C:\\Users\\Anheru\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\Anheru\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

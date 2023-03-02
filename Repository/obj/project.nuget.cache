@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ivmhlb3lLmoqq9biCfxUZGxVytcE+01PnXxfq3xWzuMyUr/IoZcnJ20necdNni53Q3IwYIXbu8u24aA6x28/hg==",
+  "dgSpecHash": "XTNqCcTPrIWMykp+QqM/Ix+k3wOdjW2byGYjxFhrdINSsfp8XC45a1V+Sdh1j0tEELgxUdl/3CgL+EB55VHpZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anheru\\source\\repos\\Company\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,8 @@
     "C:\\Users\\Anheru\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Anheru\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
-    "C:\\Users\\Anheru\\.nuget\\packages\\system.linq.dynamic.core\\1.2.6\\system.linq.dynamic.core.1.2.6.nupkg.sha512"
+    "C:\\Users\\Anheru\\.nuget\\packages\\system.linq.dynamic.core\\1.2.6\\system.linq.dynamic.core.1.2.6.nupkg.sha512",
+    "C:\\Users\\Anheru\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

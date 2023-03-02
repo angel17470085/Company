@@ -31,7 +31,9 @@ namespace CompanyEmployees.Controllers
             _dataShaper = dataShaper; 
         }
 
-        [HttpGet]
+        
+        
+        [HttpGet(Name= "GetCompanies")]
         public async Task<IActionResult> GetCompanies( [FromQuery] CompanyParameters companyParameters)
         {
             var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges: false);
@@ -78,7 +80,7 @@ namespace CompanyEmployees.Controllers
             return Ok(companiesToReturn);
         }
 
-        [HttpPost]
+        [HttpPost(Name ="CreateCompany")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> CreateCompany([FromBody]CompanyForCreationDto company)
         {
