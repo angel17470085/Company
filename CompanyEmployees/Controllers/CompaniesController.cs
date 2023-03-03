@@ -31,8 +31,7 @@ namespace CompanyEmployees.Controllers
             _dataShaper = dataShaper; 
         }
 
-        
-        
+
         [HttpGet(Name= "GetCompanies")]
         public async Task<IActionResult> GetCompanies( [FromQuery] CompanyParameters companyParameters)
         {
@@ -106,7 +105,7 @@ namespace CompanyEmployees.Controllers
             var companyEntities = _mapper.Map<IEnumerable<Company>>(companyCollection);
             foreach (var company in companyEntities)
             {
-                _repository.Company.CreateCompany(company);
+            _repository.Company.CreateCompany(company);
             }
 
             await _repository.SaveAsync();
