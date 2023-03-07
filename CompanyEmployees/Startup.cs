@@ -1,3 +1,4 @@
+using System.Threading;
 using AutoMapper;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Extensions;
@@ -20,13 +21,14 @@ namespace CompanyEmployees
 {
     public class Startup
     {
+         public IConfiguration Configuration { get; }
         public Startup(IConfiguration configuration)
         {
             LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+       
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -60,6 +62,8 @@ namespace CompanyEmployees
             {
                 config.RespectBrowserAcceptHeader = true;
                config.ReturnHttpNotAcceptable = true;
+               config.CacheProfiles.Add("120SecondsDuration", new CacheProfile { Duration = 120}); 
+
             }).AddNewtonsoftJson()
               .AddXmlDataContractSerializerFormatters()
               .AddCustomCSVFormatter();
@@ -67,6 +71,10 @@ namespace CompanyEmployees
               services.AddCustomMediaTypes();
 
               services.ConfigureVersioning();
+
+              services.ConfigureResponseCaching();
+
+              services.ConfigureHttpCacheHeaders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -92,6 +100,10 @@ namespace CompanyEmployees
                 ForwardedHeaders = ForwardedHeaders.All
             });
 
+            app.UseResponseCaching();
+
+            app.UseHttpCacheHeaders();
+            
             app.UseRouting();
 
             app.UseAuthorization();
