@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using NLog;
 using Repository.DataShaping;
 using System.IO;
+using AspNetCoreRateLimit;
 
 namespace CompanyEmployees
 {
@@ -75,6 +76,13 @@ namespace CompanyEmployees
               services.ConfigureResponseCaching();
 
               services.ConfigureHttpCacheHeaders();
+
+              services.AddMemoryCache();
+
+              services.ConfigureRateLimitingOptions();
+
+              services.AddHttpContextAccessor();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -104,6 +112,7 @@ namespace CompanyEmployees
 
             app.UseHttpCacheHeaders();
             
+            app.UseIpRateLimiting();
             app.UseRouting();
 
             app.UseAuthorization();
