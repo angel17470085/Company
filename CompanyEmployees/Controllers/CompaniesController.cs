@@ -6,6 +6,7 @@ using Entities.DataTransferObjects;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace CompanyEmployees.Controllers
         }
 
         
-        [HttpGet(Name= "GetCompanies")]
+        [HttpGet(Name= "GetCompanies"), Authorize(Roles ="Manager")]
         public async Task<IActionResult> GetCompanies( [FromQuery] CompanyParameters companyParameters)
         {
             var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges: false);

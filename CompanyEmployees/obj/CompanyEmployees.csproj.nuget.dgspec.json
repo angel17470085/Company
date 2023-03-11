@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\companyEmployees\\CompanyEmployees.csproj": {}
+    "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\companyEmployees\\CompanyEmployees.csproj": {
+    "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\companyEmployees\\CompanyEmployees.csproj",
+        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
         "projectName": "CompanyEmployees",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\companyEmployees\\CompanyEmployees.csproj",
+        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\CompanyEmployees.csproj",
         "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\companyEmployees\\obj\\",
+        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\CompanyEmployees\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,6 +58,10 @@
             "Marvin.Cache.Headers": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
@@ -216,6 +220,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"

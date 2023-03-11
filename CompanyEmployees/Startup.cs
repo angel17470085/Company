@@ -17,7 +17,6 @@ using NLog;
 using Repository.DataShaping;
 using System.IO;
 using AspNetCoreRateLimit;
-
 namespace CompanyEmployees
 {
     public class Startup
@@ -52,8 +51,22 @@ namespace CompanyEmployees
             
             services.AddScoped<IDataShaper<CompanyDto>, DataShaper<CompanyDto>>();
 
-            
+            services.ConfigureVersioning();
 
+            services.ConfigureResponseCaching();
+            services.ConfigureHttpCacheHeaders();
+
+            services.AddMemoryCache();
+
+            services.ConfigureRateLimitingOptions();
+            services.AddHttpContextAccessor();
+
+            services.AddAuthentication();
+            services.ConfigureIdentity();
+            services.ConfigureJWT(Configuration);
+
+            services.AddScoped<IAuthenticationManager, AuthenticationManager>();
+            
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
@@ -71,17 +84,7 @@ namespace CompanyEmployees
               
               services.AddCustomMediaTypes();
 
-              services.ConfigureVersioning();
-
-              services.ConfigureResponseCaching();
-
-              services.ConfigureHttpCacheHeaders();
-
-              services.AddMemoryCache();
-
-              services.ConfigureRateLimitingOptions();
-
-              services.AddHttpContextAccessor();
+             
 
         }
 
@@ -115,6 +118,7 @@ namespace CompanyEmployees
             app.UseIpRateLimiting();
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
