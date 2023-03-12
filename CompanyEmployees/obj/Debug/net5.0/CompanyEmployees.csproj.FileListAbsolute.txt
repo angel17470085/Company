@@ -185,6 +185,7 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -197,6 +198,9 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Newtonsof
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\NLog.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\System.Composition.AttributedModel.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\System.Composition.Convention.dll
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\System.Composition.Hosting.dll
@@ -302,3 +306,4 @@ C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\refint\Co
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.pdb
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\CompanyEmployees.genruntimeconfig.cache
 C:\Users\Anheru\source\repos\Company\CompanyEmployees\obj\Debug\net5.0\ref\CompanyEmployees.dll
+C:\Users\Anheru\source\repos\Company\CompanyEmployees\bin\Debug\net5.0\CompanyEmployees.xml
