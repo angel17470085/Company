@@ -9,8 +9,13 @@
     <NoWarn>1591</NoWarn>
 </PropertyGroup>
 
-<PropertyGroup>
-    <DocumentationFile>C:\Users\Anheru\source\repos\Company\CompanyEmployees\CompanyEmployees.xml</DocumentationFile>
+<PropertyGroup><!--<DocumentationFile>C:\Users\hp\source\repos\Company\CompanyEmployees\CompanyEmployees.xml</DocumentationFile>-->
+
+  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+</PropertyGroup>
+
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  <NoWarn>1701;1702;1591</NoWarn>
 </PropertyGroup>
 
   <ItemGroup>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {}
+    "C:\\Users\\hp\\source\\repos\\Company\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj": {
+    "C:\\Users\\hp\\source\\repos\\Company\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Company\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Anheru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anheru\\source\\repos\\Company\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\hp\\source\\repos\\Company\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\source\\repos\\Company\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anheru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
