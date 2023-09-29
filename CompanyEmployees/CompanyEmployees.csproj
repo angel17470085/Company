@@ -4,7 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
      <CheckEolTargetFramework>false</CheckEolTargetFramework>
   </PropertyGroup>
-
+	<PropertyGroup>
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+	</PropertyGroup>
 <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1591</NoWarn>
 </PropertyGroup>
@@ -39,6 +41,12 @@
   <ItemGroup>
     <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CompanyEmployees.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
