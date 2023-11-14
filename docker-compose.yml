@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  companyemployees:
+    image: anheru/companyemployees:runtime
+    build:
+      context: .
+    ports:
+      - "8080:5000"
+      - "8081:5001"
+    environment:
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=awesomepass
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/companyemployees.pfx
+    
+    volumes:
+      - ${USERPROFILE}/.aspnet/https:/https/
